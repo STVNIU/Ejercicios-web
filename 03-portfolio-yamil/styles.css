@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --padding-estable: 20px 30px;
+}
+
+body {
+  height: 100vh;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  background: url("plantasClaras.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1); /* Blanco con baja opacidad */
+  backdrop-filter: blur(15px); /* Más blur = más difuminado */
+  border-radius: 20px;
+  width: 1000px;
+}
+
+.headerPrincipal {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-estable);
+  & ul {
+    display: flex;
+    gap: 20px;
+    & li {
+      list-style: none;
+      & a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}
